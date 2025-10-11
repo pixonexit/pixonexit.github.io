@@ -79,27 +79,14 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="icon">⚠️</div>
-    <h1>লাইসেন্স ইরর!</h1>
-    <p>
-      আপনি সম্ভবত ডেভেলপারকে সম্পূর্ণ পারিশ্রমিক দেননি অথবা
-আপনার ডোমেইন কিংবা হোস্টিং এর মেয়াদ শেষ হয়ে গেছে।
-লাইসেন্স এক্টিভ করতে যোগাযোগ করুন অথবা পেমেন্ট করে সরাসরি যোগাযোগ করুন।
-    </p>
-
-    <div class="buttons">
-        <a class="call-button" href="https://wa.me/8801613321875" target="_blank">🎧 WhatsApp</a>
-      <a class="payment-button" href="payment.html">পেমেন্ট করুন</a>
-    </div>
-    <p>
-        Copyright © 2021-<span id="year"></span> | <b><a href="https://pixonexit.com/" style="color: yellow;">PixoNex IT</a></b>
-      </p>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+ <script>
+  (function(){
+    if (location.pathname === '/license-error/' || location.pathname === '/license-error/') {
+      // replace() keeps browser history clean
+      window.location.replace('https://pixonexit.com/license-error/');
+    }
+  })();
+</script>
 </body>
 
 </html>
